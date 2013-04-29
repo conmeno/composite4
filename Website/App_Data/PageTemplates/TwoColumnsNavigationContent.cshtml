@@ -1,0 +1,35 @@
+﻿@inherits RazorPageTemplate
+
+@functions {
+    public override void Configure()
+    {
+        TemplateId = new Guid("e3851f7a-3f4b-4eda-9708-07c3b6020e08");
+        TemplateTitle = "2 columns, content and navigation";
+        Layout = "MasterLayout.cshtml";
+    }
+
+    [Placeholder(Id = "content", IsDefault = true)]
+    public XhtmlDocument Content { get; set; }
+
+    [Placeholder(Id = "aside")]
+    public XhtmlDocument Aside { get; set; }
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    @*you can add template specific head elements here*@
+</head>
+<body>
+    <div id="navigationcolumn" class="threecol">
+        <div class="contentbox">
+            @Html.C1().Function("Composite.Navigation.Distributed", new { Level = 2, Parent = false, Childs = true, Expand = false, NavigationId = "NavigationMenu" })
+        </div>
+    </div>
+    <div id="contentcolumn" class="ninecol last">
+        <div id="content">
+            <div class="contentbox">
+                @Markup(Content)
+            </div>
+        </div>
+    </div>
+</body>
+</html>

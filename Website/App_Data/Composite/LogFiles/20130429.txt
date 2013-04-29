@@ -1,0 +1,2 @@
+﻿20130429 15:26:53.1168 2 43 Information Composite.Core.WebClient.Setup.SetupService  Setup complete. Enjoy!
+20130429 15:26:53.2878 2  5 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 2 ended at 15:26:53:28 in process 9628
