@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FormData>
+  <ContainerLabel value="Trang chủ" />
+  <FormDefinition value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#xD;&#xA;&lt;cms:formdefinition xmlns=&quot;http://www.composite.net/ns/management/bindingforms/std.ui.controls.lib/1.0&quot; xmlns:internal=&quot;http://www.composite.net/ns/management/bindingforms/internal.ui.controls.lib/1.0&quot; xmlns:f=&quot;http://www.composite.net/ns/management/bindingforms/std.function.lib/1.0&quot; xmlns:cms=&quot;http://www.composite.net/ns/management/bindingforms/1.0&quot;&gt;&#xD;&#xA;&#x9;&lt;cms:bindings&gt;&#xD;&#xA;&#x9;&#x9;&lt;cms:binding name=&quot;SelectedPage&quot; type=&quot;Composite.Data.Types.IPage&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&lt;cms:binding name=&quot;SelectablePageTypeIds&quot; type=&quot;System.Collections.IEnumerable&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&lt;cms:binding name=&quot;SelectableTemplateIds&quot; type=&quot;System.Collections.IEnumerable&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&lt;cms:binding name=&quot;PublishDate&quot; type=&quot;System.Object&quot; optional=&quot;true&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&lt;cms:binding name=&quot;UnpublishDate&quot; type=&quot;System.Object&quot; optional=&quot;true&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&lt;cms:binding name=&quot;StateOptions&quot; type=&quot;System.Object&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&lt;cms:binding name=&quot;NamedXhtmlFragments&quot; type=&quot;System.Object&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&lt;cms:binding name=&quot;PreviewEventHandler&quot; type=&quot;System.EventHandler&quot; optional=&quot;true&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&lt;cms:binding name=&quot;CustomEvent01Handler&quot; type=&quot;System.EventHandler&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&lt;cms:binding name=&quot;UrlTitleIsRequired&quot; type=&quot;System.Boolean&quot; /&gt;&#xD;&#xA;&#x9;&lt;/cms:bindings&gt;&#xD;&#xA;&#x9;&lt;cms:layout iconhandle=&quot;page-edit-page&quot;&gt;&#xD;&#xA;&#x9;&#x9;&lt;TabPanels PreSelectedIndex=&quot;1&quot;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;TabPanels.Label&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;cms:read source=&quot;SelectedPage.Title&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;/TabPanels.Label&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;PlaceHolder Label=&quot;${Composite.Plugins.PageElementProvider, EditPage.LabelPaneSettings}&quot;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;FieldGroup Label=&quot;${Composite.Plugins.PageElementProvider, GeneralSettings.FieldGroupLabel}&quot;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;TextBox Label=&quot;${Composite.Plugins.PageElementProvider, EditPage.LabelPageTitle}&quot; Help=&quot;${Composite.Plugins.PageElementProvider, EditPage.LabelPageTitleHelp}&quot;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;TextBox.Text&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;cms:bind source=&quot;SelectedPage.Title&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/TextBox.Text&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/TextBox&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;TextArea Label=&quot;${Composite.Plugins.PageElementProvider, EditPage.LabelAbstract}&quot; Help=&quot;${Composite.Plugins.PageElementProvider, EditPage.LabelAbstractHelp}&quot;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;TextArea.Text&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;cms:bind source=&quot;SelectedPage.Description&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/TextArea.Text&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/TextArea&gt;&#xD;&#xA;&#xD;&#xA;          &lt;KeySelector OptionsKeyField=&quot;Key&quot; OptionsLabelField=&quot;Value&quot; Label=&quot;${Composite.Plugins.PageElementProvider, EditPage.PageTypeSelectorLabel}&quot; Help=&quot;${Composite.Plugins.PageElementProvider, EditPage.PageTypeSelectorHelp}&quot;&gt;&#xD;&#xA;            &lt;KeySelector.SelectedIndexChangedEventHandler&gt;&#xD;&#xA;              &lt;cms:read source=&quot;CustomEvent01Handler&quot; /&gt;&#xD;&#xA;            &lt;/KeySelector.SelectedIndexChangedEventHandler&gt;&#xD;&#xA;            &lt;KeySelector.Options&gt;&#xD;&#xA;              &lt;cms:read source=&quot;SelectablePageTypeIds&quot; /&gt;&#xD;&#xA;            &lt;/KeySelector.Options&gt;&#xD;&#xA;            &lt;KeySelector.Selected&gt;&#xD;&#xA;              &lt;cms:bind source=&quot;SelectedPage.PageTypeId&quot; /&gt;&#xD;&#xA;            &lt;/KeySelector.Selected&gt;&#xD;&#xA;          &lt;/KeySelector&gt;&#xD;&#xA;          &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;/FieldGroup&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;FieldGroup Label=&quot;${Composite.Plugins.PageElementProvider, PublicationSettings.FieldGroupLabel}&quot;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;KeySelector OptionsKeyField=&quot;Key&quot; OptionsLabelField=&quot;Value&quot; Label=&quot;${Composite.Plugins.PageElementProvider, EditPage.LabelPublicationState}&quot; Help=&quot;${Composite.Plugins.PageElementProvider, EditPage.HelpPublicationState}&quot; Required=&quot;true&quot;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;KeySelector.Selected&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;cms:bind source=&quot;SelectedPage.PublicationStatus&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/KeySelector.Selected&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;KeySelector.Options&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;cms:read source=&quot;StateOptions&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/KeySelector.Options&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/KeySelector&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;DateTimeSelector Label=&quot;${Composite.Plugins.PageElementProvider, EditPage.LabelPublishDate}&quot; Help=&quot;${Composite.Plugins.PageElementProvider, EditPage.HelpPublishDate}&quot;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;cms:bind source=&quot;PublishDate&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/DateTimeSelector&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;DateTimeSelector Label=&quot;${Composite.Plugins.PageElementProvider, EditPage.LabelUnpublishDate}&quot; Help=&quot;${Composite.Plugins.PageElementProvider, EditPage.HelpUnpublishDate}&quot;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;cms:bind source=&quot;UnpublishDate&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/DateTimeSelector&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;/FieldGroup&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;FieldGroup Label=&quot;${Composite.Plugins.PageElementProvider, AdvancedSettings.FieldGroupLabel}&quot;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;TextBox Label=&quot;${Composite.Plugins.PageElementProvider, EditPage.LabelMenuTitle}&quot; Help=&quot;${Composite.Plugins.PageElementProvider, EditPage.HelpMenuTitle}&quot;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;TextBox.Text&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;cms:bind source=&quot;SelectedPage.MenuTitle&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/TextBox.Text&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/TextBox&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;TextBox Label=&quot;${Composite.Plugins.PageElementProvider, EditPage.LabelUrlTitle}&quot; Help=&quot;${Composite.Plugins.PageElementProvider, EditPage.HelpUrlTitle}&quot; SpellCheck=&quot;false&quot;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;TextBox.Required&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;cms:read source=&quot;UrlTitleIsRequired&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/TextBox.Required&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;TextBox.Text&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;cms:bind source=&quot;SelectedPage.UrlTitle&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/TextBox.Text&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/TextBox&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;TextBox Label=&quot;${Composite.Plugins.PageElementProvider, EditPage.LabelFriendlyUrl}&quot; Help=&quot;${Composite.Plugins.PageElementProvider, EditPage.HelpFriendlyUrl}&quot; SpellCheck=&quot;false&quot;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;TextBox.Text&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;cms:bind source=&quot;SelectedPage.FriendlyUrl&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/TextBox.Text&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/TextBox&gt;&#x9;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;/FieldGroup&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;/PlaceHolder&gt;&#xD;&#xA;      &#xD;&#xA;&#x9;&#x9;&#x9;&lt;internal:PageContentEditor Label=&quot;${Composite.Plugins.PageElementProvider, EditPage.LabelContent}&quot;&gt;&#xD;&#xA;        &lt;internal:PageContentEditor.TemplateId&gt;&#xD;&#xA;          &lt;cms:bind source=&quot;SelectedPage.TemplateId&quot; /&gt;&#xD;&#xA;        &lt;/internal:PageContentEditor.TemplateId&gt;&#xD;&#xA;        &lt;internal:PageContentEditor.SelectableTemplateIds&gt;&#xD;&#xA;          &lt;cms:bind source=&quot;SelectableTemplateIds&quot; /&gt;&#xD;&#xA;        &lt;/internal:PageContentEditor.SelectableTemplateIds&gt;&#xD;&#xA;        &lt;internal:PageContentEditor.NamedXhtmlFragments&gt;&#xD;&#xA;          &lt;cms:bind source=&quot;NamedXhtmlFragments&quot; /&gt;&#xD;&#xA;        &lt;/internal:PageContentEditor.NamedXhtmlFragments&gt;&#xD;&#xA;      &lt;/internal:PageContentEditor&gt;&#xD;&#xA;      &#xD;&#xA;&#x9;&#x9;&#x9;&lt;f:NullCheck&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;f:NullCheck.CheckValue&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;cms:read source=&quot;PreviewEventHandler&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;/f:NullCheck.CheckValue&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;f:NullCheck.WhenNotNull&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;internal:PreviewPanel Label=&quot;${Composite.Plugins.PageElementProvider, EditPage.LabelPreview}&quot;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;internal:PreviewPanel.ClickEventHandler&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;cms:read source=&quot;PreviewEventHandler&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/internal:PreviewPanel.ClickEventHandler&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/internal:PreviewPanel&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;/f:NullCheck.WhenNotNull&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;/f:NullCheck&gt;&#xD;&#xA;&#x9;&#x9;&lt;/TabPanels&gt;&#xD;&#xA;&#x9;&lt;/cms:layout&gt;&#xD;&#xA;&lt;/cms:formdefinition&gt;" />
+  <CustomToolbarDefinition />
+  <ContainerType>
+    <SerializerHandler value="SerializerHandlerType='Composite\.C1Console\.Actions\.StandardUiContainerTypesSerializerHandler,Composite'SerializedObject='Document'" />
+  </ContainerType>
+  <Bindings>
+    <Dictionary type="&lt;t n=&quot;System.Collections.Generic.Dictionary`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="SelectedPage" />
+        </Key>
+        <Value>
+          <SerializerHandler value="SerializerHandlerType='Composite\.Data\.DataSerializerHandler,Composite'SerializedObject='_IsNew_=\'False\'_DataSourceId_=\'_dataId_=\\\'Id=\\\\\\\'a3055286-0e90-4b04-99dd-fb1a61dde0bf\\\\\\\'\\\'_dataIdType_=\\\'CompositeGenerated\\\\\\\.DynamicXmlDataProvider\\\\\\\.Composite_Data_Types_IPageDataId\\\'_interfaceType_=\\\'Composite\\\\\\\.Data\\\\\\\.Types\\\\\\\.IPage,Composite\\\'_dataScope_=\\\'administrated\\\'_localeScope_=\\\'vi-VN\\\'\'Id=\'a3055286-0e90-4b04-99dd-fb1a61dde0bf\'TemplateId=\'1eefd782-273c-45ee-85c4-39f145d91f0d\'PageTypeId=\'de22fed1-0729-4ad3-aa1c-6047e54bf429\'Title=\'Trang\\\ chủ\'MenuTitle=\'Trang\\\ chủ\'UrlTitle=\'\'FriendlyUrl=\'\'Description=\'\'Composite-Data-IChangeHistory\.ChangeDate=\'05/01/2013\\\ 16:49:34\'Composite-Data-IChangeHistory\.ChangedBy=\'host\'Composite-Data-ProcessControlled-IPublishControlled\.PublicationStatus=\'draft\'Composite-Data-ProcessControlled-ILocalizedControlled\.CultureName=\'vi-VN\'Composite-Data-ProcessControlled-ILocalizedControlled\.SourceCultureName=\'vi-VN\''" />
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="UrlTitleIsRequired" />
+        </Key>
+        <Value>
+          <Value type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="false" />
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="SelectablePageTypeIds" />
+        </Key>
+        <Value>
+          <List type="&lt;t n=&quot;System.Collections.Generic.List`1, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.Collections.Generic.KeyValuePair`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;    &lt;t n=&quot;System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;    &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;/t&gt;&#xD;&#xA;&lt;/t&gt;">
+            <KeyValuePair type="&lt;t n=&quot;System.Collections.Generic.KeyValuePair`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+              <Key>
+                <Value type="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="de22fed1-0729-4ad3-aa1c-6047e54bf429" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="Home" />
+              </Value>
+            </KeyValuePair>
+          </List>
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="SelectableTemplateIds" />
+        </Key>
+        <Value>
+          <List type="&lt;t n=&quot;System.Collections.Generic.List`1, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.Collections.Generic.KeyValuePair`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;    &lt;t n=&quot;System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;    &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;/t&gt;&#xD;&#xA;&lt;/t&gt;">
+            <KeyValuePair type="&lt;t n=&quot;System.Collections.Generic.KeyValuePair`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+              <Key>
+                <Value type="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="0526ad34-c540-418e-8c23-0eec2a8da2ce" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="1 column, full width" />
+              </Value>
+            </KeyValuePair>
+            <KeyValuePair type="&lt;t n=&quot;System.Collections.Generic.KeyValuePair`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+              <Key>
+                <Value type="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="9f096519-d21c-435e-b334-62224fde2ab3" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="2 columns, content and aside" />
+              </Value>
+            </KeyValuePair>
+            <KeyValuePair type="&lt;t n=&quot;System.Collections.Generic.KeyValuePair`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+              <Key>
+                <Value type="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="e3851f7a-3f4b-4eda-9708-07c3b6020e08" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="2 columns, content and navigation" />
+              </Value>
+            </KeyValuePair>
+            <KeyValuePair type="&lt;t n=&quot;System.Collections.Generic.KeyValuePair`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+              <Key>
+                <Value type="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="ea2ca748-efbf-4d94-8e2a-11ce49b71cd5" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="3 columns" />
+              </Value>
+            </KeyValuePair>
+            <KeyValuePair type="&lt;t n=&quot;System.Collections.Generic.KeyValuePair`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+              <Key>
+                <Value type="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="a270f819-0b5c-4f7e-9194-4b554043e4ab" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="Frontpage" />
+              </Value>
+            </KeyValuePair>
+            <KeyValuePair type="&lt;t n=&quot;System.Collections.Generic.KeyValuePair`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+              <Key>
+                <Value type="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="1eefd782-273c-45ee-85c4-39f145d91f0d" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="WeddingTemplate" />
+              </Value>
+            </KeyValuePair>
+          </List>
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="NamedXhtmlFragments" />
+        </Key>
+        <Value>
+          <Dictionary type="&lt;t n=&quot;System.Collections.Generic.Dictionary`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+            <KeyPair>
+              <Key>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="Home" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&#xA;&#x9;&lt;head&gt;&lt;/head&gt;&#xA;&#x9;&lt;body&gt;&#xA;&#xA;&lt;div id=&quot;top-header&quot;&gt;&lt;a href=&quot;/&quot;&gt;&lt;img src=&quot;/Wedding/images/logo.png&quot; alt=&quot;logo&quot; /&gt;&lt;/a&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;div class=&quot;logo-shadow&quot;&gt;&lt;img src=&quot;/Wedding/images/logo-shadow.png&quot; alt=&quot;logo shadow&quot; /&gt;&lt;/div&gt;&#xA;&#xA;&lt;div id=&quot;bottom-header&quot;&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&quot;#home-section&quot;&gt;Trang chủ&lt;/a&gt;&#xA;&#xA;&lt;/li&gt;&#xA;&#xA;&lt;li&gt;&lt;a href=&quot;#intro-section&quot;&gt;Giới thiệu&lt;/a&gt;&#xA;&#xA;&lt;/li&gt;&#xA;&#xA;&lt;li&gt;&lt;a href=&quot;#cBenefit-section&quot;&gt;Lợi ích khách hàng&lt;/a&gt;&#xA;&#xA;&lt;/li&gt;&#xA;&#xA;&lt;li&gt;&lt;a href=&quot;#features-section&quot;&gt;Điểm nổi bật&lt;/a&gt;&#xA;&#xA;&lt;/li&gt;&#xA;&#xA;&lt;li&gt;&lt;a href=&quot;#wCoffee-section&quot;&gt;Wedding Coffee&lt;/a&gt;&#xA;&#xA;&lt;/li&gt;&#xA;&#xA;&lt;li&gt;&lt;a href=&quot;#partner-section&quot;&gt;Đối tác&lt;/a&gt;&#xA;&#xA;&lt;/li&gt;&#xA;&#xA;&lt;li&gt;&lt;a href=&quot;#contact-section&quot;&gt;Liên hệ&lt;/a&gt;&#xA;&#xA;&lt;/li&gt;&#xA;&#xA;&lt;li&gt;&lt;a href=&quot;/en&quot;&gt;English&lt;/a&gt;&#xA;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&#x9;&lt;/body&gt;&#xA;&lt;/html&gt;" />
+              </Value>
+            </KeyPair>
+            <KeyPair>
+              <Key>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="Intro" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&#xA;&#x9;&lt;head&gt;&lt;/head&gt;&#xA;&#x9;&lt;body&gt;&#xA;&#x9;&#x9;&lt;div id=&quot;intro-section&quot; class=&quot;section clearfix&quot;&gt;&#xA;&#x9;&#x9;&#x9;&lt;div class=&quot;image-section intro-image&quot;&gt;&lt;img class=&quot;intro-image&quot; src=&quot;/Wedding/images/tree-vector.png&quot; alt=&quot;intro img&quot; /&gt;&lt;/div&gt;&#xA;&#x9;&#x9;&#x9;&lt;div class=&quot;content intro-content&quot;&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;h1 class=&quot;title intro-title&quot;&gt;Wedding &lt;span&gt;Saving&lt;/span&gt;&lt;/h1&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;p&gt;Là một công ty tư vấn và kinh doanh dịch vụ cưới trọn gói đầu tiên tại Việt Nam, Wedding Saving luôn đặt mình vào vị trí như một người thân của bạn để hiểu rằng: kết hôn là một sự kiện trọng đại của đời người, là điểm nhấn quan trọng cho con đường xây dựng gia đình hạnh phúc trong tương lai. Chính vì vay bất kỳ ai khi kết hôn đều mong cho mình sẽ có một lễ cưới thật hoàn hảo. Tuy nhiên, việc tổ chức một tiệc cưới sao cho hoàn hảo và phù hợp với khả năng tài chính, hẳn rằng da làm cho bạn gặp nhiều bỡ ngỡ Chúng tôi, Wedding Saving, sẽ cùng bạn gánh vác nỗi lo chi phí để ngày vui của bạn thêm phần trọn vẹn.&lt;/p&gt;&#xA;&#x9;&#x9;&#x9;&lt;/div&gt;&#xA;&#x9;&#x9;&lt;/div&gt;&#xA;&#x9;&#x9;&lt;div class=&quot;seperator seperator1&quot;&gt;&#xA;&#x9;&#x9;&#x9;&lt;div class=&quot;quote-outer&quot;&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;div class=&quot;quote-inner&quot;&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;p&gt;A kiss is a lovely trick designed by nature to stop speech when words become superfluous.&lt;span class=&quot;author&quot;&gt;~Aristotle&lt;/span&gt;&lt;/p&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;/div&gt;&#xA;&#x9;&#x9;&#x9;&lt;/div&gt;&#xA;&#x9;&#x9;&lt;/div&gt;&#xA;&#x9;&lt;/body&gt;&#xA;&lt;/html&gt;" />
+              </Value>
+            </KeyPair>
+            <KeyPair>
+              <Key>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="Contact" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&#xA;&#x9;&lt;head&gt;&lt;/head&gt;&#xA;&#x9;&lt;body&gt;&#xA;&lt;div id=&quot;contact-section&quot;&gt;&#xA;&#x9;&lt;div id=&quot;contactable_inner&quot;&gt;&#xA;&#x9;&#x9;&lt;div class=&quot;contact-text&quot;&gt;&#xA;&#x9;&#x9;&#x9;&lt;h1 class=&quot;title&quot;&gt;Liên hệ với Wedding &lt;span&gt;Saving&lt;/span&gt;&lt;/h1&gt;&#xA;&#x9;&#x9;&#x9;&lt;p class=&quot;add&quot;&gt;339A Lạc Long Quân F5 , Q11 , Tp.HCM&lt;/p&gt;&#xA;&#x9;&#x9;&#x9;&lt;p class=&quot;fone&quot;&gt;083 8654395&lt;/p&gt;&#xA;&#x9;&#x9;&#x9;&lt;p class=&quot;mobile&quot;&gt;0908 332 541&lt;/p&gt;&#xA;&#x9;&#x9;&lt;/div&gt;&#xA;&#x9;&#x9;&lt;div id=&quot;contactForm&quot;&gt;&#xA;&#x9;&#x9;&#x9;&lt;h1 class=&quot;title&quot;&gt;Chúng tôi &lt;span&gt;lắng nghe&lt;/span&gt; ý kiến của bạn !&lt;/h1&gt;&#xA;&#x9;&#x9;&#x9;&lt;div id=&quot;loading&quot;&gt;&lt;/div&gt;&#xA;&#x9;&#x9;&#x9;&lt;div id=&quot;callback&quot;&gt;&lt;/div&gt;&#xA;&#x9;&#x9;&#x9;&lt;div class=&quot;holder&quot;&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;f:function name=&quot;Composite.Forms.ContactForm&quot; xmlns:f=&quot;http://www.composite.net/ns/function/1.0&quot;&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;f:param name=&quot;Email&quot; value=&quot;trangphuong618@gmail.com&quot; xmlns:f=&quot;http://www.composite.net/ns/function/1.0&quot; /&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;f:param name=&quot;EmailTemplate&quot; value=&quot;3f4fd0fb-0a1a-4b93-af3d-46e9fdf0644f&quot; xmlns:f=&quot;http://www.composite.net/ns/function/1.0&quot; /&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;/f:function&gt;&amp;#160;&#xA;&lt;br /&gt;&lt;p class=&quot;disclaimer&quot;&gt;( Xin vui lòng liên lạc , chúng tôi đánh giá cao thông tin phản hồi của bạn )&lt;/p&gt;&lt;/div&gt;&#xA;&#x9;&#x9;&lt;/div&gt;&#xA;&#x9;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#x9;&lt;/body&gt;&#xA;&lt;/html&gt;" />
+              </Value>
+            </KeyPair>
+            <KeyPair>
+              <Key>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="Coffee" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&#xA;&#x9;&lt;head&gt;&lt;/head&gt;&#xA;&#x9;&lt;body&gt;&#xA;&lt;div id=&quot;wCoffee-section&quot; class=&quot;section&quot;&gt;&#xA;&#x9;&lt;h1 class=&quot;title center-title&quot;&gt;Wedding &lt;span&gt;Coffee&lt;/span&gt;/&lt;/h1&gt;&#xA;&#x9;&lt;div&gt;&#xA;&#x9;&#x9;&lt;h3&gt;WeddingCoffee – Không dành riêng cho một ai&lt;/h3&gt;&#xA;&#x9;&#x9;&lt;ul&gt;&#xA;&#x9;&#x9;&#x9;&lt;li&gt;Bạn - đôi vợ chồng đã trải qua cùng nhau nhưng thăng trầm cuộc sống. Đến – Và hoài niệm. Để nhớ cảm giác ngập ngừng lần đầu mặc váy cưới, nhớ ánh mắt dịu dàng trao nhẫn cho nhau, nhớ những lời chúc phúc, những giây phút ấm áp tuần trăng mật…Để ngỡ mọi thứ dường như chỉ vừa hôm qua…Để biết trân trọng và gìn giữ những điều mình đang có.&lt;/li&gt;&#xA;&#x9;&#x9;&#x9;&lt;li&gt;Bạn - chuẩn bị bước vào cánh cửa hôn nhân. Đến – Và tìm kiếm những thôn tin cưới bổ ích, nhận được sự tư vấn miễn phí trọn gói giúp bạn tiết kiệm chi phí dịch vụ đến mức tối đa, để ngày trọng đại được trọn vẹn với những điều tuyệt vời nhất.&lt;/li&gt;&#xA;&#x9;&#x9;&#x9;&lt;li&gt;Bạn - vẫn một mình trong những bận rộn lo toan. Đến – Và để nhâm nhi một cốc café với những âm điệu du dương rồi mải mê nhìn theo những vạt nắng. Hay lặng lòng với những bụi mưa lấm tấm trên ô cửa kính. Một thoáng lướt qua những khung hình cưới để biết trong lòng minh vẫn còn một giấc mơ nhỏ đang tồn tại. Nhìn những môi cười xa lạ để biết rằng hạnh phúc không ích kỉ với một ai. Và biết đâu đó trong những ánh mắt bang qua nơi đây, bạn sẽ tìm thấy một tia nắng ấm áp của đời mình. Nhân duyên kì lạ…Mọi chuyện đều có thể xảy ra…&lt;/li&gt;&#xA;&#x9;&#x9;&lt;/ul&gt;&#xA;&#x9;&lt;/div&gt;&#xA;&#x9;&lt;h3&gt;Hình ảnh Wedding Coffee&lt;/h3&gt;&#xA;&#x9;&lt;div class=&quot;makeMeScrollable&quot;&gt;&#xA;&#x9;&#x9;&lt;f:function name=&quot;wedding.gallery&quot; xmlns:f=&quot;http://www.composite.net/ns/function/1.0&quot;&gt;&#xA;&#x9;&#x9;&#x9;&lt;f:param name=&quot;ImagesFolder&quot; value=&quot;MediaArchive:03f49a39-5677-4a23-9fd1-532248761f65&quot; xmlns:f=&quot;http://www.composite.net/ns/function/1.0&quot; /&gt;&#xA;&#x9;&#x9;&lt;/f:function&gt;&#xA;&#x9;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#x9;&lt;/body&gt;&#xA;&lt;/html&gt;" />
+              </Value>
+            </KeyPair>
+            <KeyPair>
+              <Key>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="Features" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&#xA;&#x9;&lt;head&gt;&lt;/head&gt;&#xA;&#x9;&lt;body&gt;&#xA;&lt;div id=&quot;features-section&quot; class=&quot;section&quot;&gt;&#xA;&#x9;&lt;h1 class=&quot;title center-title&quot;&gt;Điểm nổi bật của &lt;span&gt;Wedding Saving&lt;/span&gt;&lt;/h1&gt;&#xA;&#x9;&lt;div&gt;&#xA;&#x9;&#x9;&lt;h3&gt;Giảm bớt nỗi lo chi phí , tăng giá trị niềm vui&lt;/h3&gt;&#xA;&#x9;&#x9;&lt;ul&gt;&#xA;&#x9;&#x9;&#x9;&lt;li&gt;Cùng với đội ngũ nhân viên trẻ tuổi đầy nhiệt huyết và năng động, mỗi một khách hàng đến với Wedding Saving, chúng tôi đều đặt trách nhiệm phải nỗ lực hết mình để lắng nghe và chia sẻ cùng quý khách.&lt;/li&gt;&#xA;&#x9;&#x9;&#x9;&lt;li&gt;Wedding Saving tin rằng sẽ là nơi lựa chọn lý tưởng và đáng tin cậy để mang lại những điều tốt đẹp nhất cho bạn.&lt;/li&gt;&#xA;&#x9;&#x9;&lt;/ul&gt;&#xA;&#x9;&lt;/div&gt;&#xA;&#x9;&lt;h3&gt;Hình ảnh khách hàng&lt;/h3&gt;&#xA;&#x9;&lt;div class=&quot;makeMeScrollable&quot;&gt;&#xA;&#x9;&#x9;&lt;f:function name=&quot;wedding.gallery&quot; xmlns:f=&quot;http://www.composite.net/ns/function/1.0&quot;&gt;&#xA;&#x9;&#x9;&#x9;&lt;f:param name=&quot;ImagesFolder&quot; value=&quot;MediaArchive:4866e87f-e011-4803-80bc-8c5de1563b21&quot; xmlns:f=&quot;http://www.composite.net/ns/function/1.0&quot; /&gt;&#xA;&#x9;&#x9;&lt;/f:function&gt;&#xA;&#x9;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#x9;&lt;/body&gt;&#xA;&lt;/html&gt;" />
+              </Value>
+            </KeyPair>
+            <KeyPair>
+              <Key>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="Partner" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&#xA;&#x9;&lt;head&gt;&lt;/head&gt;&#xA;&#x9;&lt;body&gt;&#xA;&lt;div id=&quot;partner-section&quot; class=&quot;section page&quot;&gt;&#xA;&#x9;&lt;h1 class=&quot;title center-title&quot;&gt;Đối tác của Wedding &lt;span&gt;Saving&lt;/span&gt;&lt;/h1&gt;&#xA;&#x9;&lt;div class=&quot;makeMeScrollable partner-scroll&quot;&gt;&#xA;&#x9;&#x9;&lt;f:function name=&quot;wedding.gallery&quot; xmlns:f=&quot;http://www.composite.net/ns/function/1.0&quot;&gt;&#xA;&#x9;&#x9;&#x9;&lt;f:param name=&quot;ImagesFolder&quot; value=&quot;MediaArchive:058a34c3-4faf-4639-bfe0-2931c8815e7a&quot; xmlns:f=&quot;http://www.composite.net/ns/function/1.0&quot; /&gt;&#xA;&#x9;&#x9;&lt;/f:function&gt;&#xA;&#x9;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#x9;&lt;/body&gt;&#xA;&lt;/html&gt;" />
+              </Value>
+            </KeyPair>
+            <KeyPair>
+              <Key>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="Benefit" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&#xA;&#x9;&lt;head&gt;&lt;/head&gt;&#xA;&#x9;&lt;body&gt;&#xA;&#xA;&lt;div id=&quot;cBenefit-section&quot; class=&quot;section clearfix&quot;&gt;&#xA;&lt;div class=&quot;image-section cBenefit-image&quot;&gt;&lt;img src=&quot;/Wedding/images/car.jpg&quot; alt=&quot;cBenefit img&quot; /&gt;&lt;/div&gt;&#xA;&#xA;&lt;div class=&quot;content cBenefit-content&quot;&gt;&#xA;&lt;h1 class=&quot;title cBenefit-title&quot;&gt;Bạn mong muốn điều gì cho ngày &lt;span&gt;trọng đại&lt;/span&gt; của mình ?&lt;/h1&gt;&#xA;&#xA;&lt;p&gt;- Album cưới ngọt ngào ? Tiệc cưới tuyệt vời ? Chi phí giới hạn ?&lt;br /&gt; - Hay những phút giây lãng mạn tuần trăng mật ?&lt;br /&gt; - Hãy nói với Wedding Saving điều bạn muốn , chúng tôi sẽ giúp bạn với các dịch vụ :&lt;/p&gt;&#xA;&#xA;&lt;div class=&quot;benefit clearfix&quot;&gt;&lt;img src=&quot;/Wedding/images/pride-groom-vector.png&quot; alt=&quot;cBenefit vector&quot; /&gt; &#xA;&#xA;&lt;p&gt;Cung cấp các địa chỉ dịch vụ cưới&lt;br /&gt; uy tín song hành với chất lượng&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;div class=&quot;benefit clearfix&quot;&gt;&lt;img src=&quot;/Wedding/images/pig-vector.png&quot; alt=&quot;cBenefit vector&quot; /&gt; &#xA;&#xA;&lt;p&gt;Tư vấn trọn gói giúp bạn tiết kiệm&lt;br /&gt; các chi phí dịch vụ đến mức tối đa&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&#x9;&lt;/body&gt;&#xA;&lt;/html&gt;" />
+              </Value>
+            </KeyPair>
+          </Dictionary>
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="StateOptions" />
+        </Key>
+        <Value>
+          <Dictionary type="&lt;t n=&quot;System.Collections.Generic.Dictionary`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+            <KeyPair>
+              <Key>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="draft" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="Draft" />
+              </Value>
+            </KeyPair>
+            <KeyPair>
+              <Key>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="awaitingApproval" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="Awaiting Approval" />
+              </Value>
+            </KeyPair>
+            <KeyPair>
+              <Key>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="awaitingPublication" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="Awaiting Publication" />
+              </Value>
+            </KeyPair>
+          </Dictionary>
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="PublishDate" />
+        </Key>
+        <Value>
+          <Null />
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="UnpublishDate" />
+        </Key>
+        <Value>
+          <Null />
+        </Value>
+      </KeyPair>
+    </Dictionary>
+  </Bindings>
+  <BindingsValidationRules>
+    <Dictionary type="&lt;t n=&quot;System.Collections.Generic.Dictionary`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.Collections.Generic.List`1, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;    &lt;t n=&quot;Composite.Data.Validation.ClientValidationRules.ClientValidationRule,Composite&quot; /&gt;&#xD;&#xA;  &lt;/t&gt;&#xD;&#xA;&lt;/t&gt;" />
+  </BindingsValidationRules>
+  <ExcludedEvents>
+    <List type="&lt;t n=&quot;System.Collections.Generic.List`1, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;" />
+  </ExcludedEvents>
+</FormData>
