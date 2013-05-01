@@ -44,3 +44,7 @@
 20130501 15:51:01.2262 77 10 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 77 ended at 15:51:01:22 in process 23056
 20130501 15:51:10.2297 78 72 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 78 ended at 15:51:10:22 in process 23056
 20130501 15:56:28.7619 79 10 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 79 ended at 15:56:28:76 in process 23056
+20130501 16:56:59.6666 80 90 Information MimeTypeInfo  Uploading file 'coffee9.jpg'. MIME type from extension: 'image/jpeg'
+20130501 17:27:36.2206 80 129 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 80 ended at 17:27:36:21 in process 23056
+20130501 17:27:46.5572 81 57 Warning ConsoleMessageServiceFacade  Console 'key05498287996028772' has a last known change numer of 315, but server current number is 1.
+20130501 17:45:05.3366 81 21 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 81 ended at 17:45:05:33 in process 23056

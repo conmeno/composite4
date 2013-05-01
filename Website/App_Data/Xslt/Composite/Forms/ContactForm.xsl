@@ -32,8 +32,7 @@
 	<xsl:template match="/">
 		<html>
 			<head>
-				<link rel="stylesheet" type="text/css" href="~/Frontend/Composite/Forms/ContactForm/Styles.css" />
-				<script id="jquery-js" src="//code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+				<link rel="stylesheet" type="text/css" href="~/Frontend/Composite/Forms/ContactForm/Styles.css" />				
 				<script src="~/Frontend/Composite/Forms/ContactForm/Scripts/contactform_validation.js" type="text/javascript"></script>
 			</head>
 			<body>

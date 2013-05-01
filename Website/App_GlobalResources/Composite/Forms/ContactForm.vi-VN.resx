@@ -148,10 +148,10 @@
     <value>Họ tên khách hàng</value>
   </data>
   <data name="RequestText" xml:space="preserve">
-    <value>Please use the boxes below to contact us with a brief outline of your requirements:</value>
+    <value />
   </data>
   <data name="ResponseText" xml:space="preserve">
-    <value>Thank you! We will contact you as soon as possible.</value>
+    <value>Cảm ơn bạn! Chúng tôi sẽ liên lạc với bạn trong thời gian nhanh nhất</value>
   </data>
   <data name="SendButton" xml:space="preserve">
     <value>Send</value>
