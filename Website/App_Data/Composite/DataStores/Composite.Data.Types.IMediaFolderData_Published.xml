@@ -1,4 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <MediaFolderDataElementsElements>
+  <MediaFolderDataElements Id="03f49a39-5677-4a23-9fd1-532248761f65" Path="/Gallery Coffee" Title="" Description="" />
+  <MediaFolderDataElements Id="058a34c3-4faf-4639-bfe0-2931c8815e7a" Path="/Gallery Partner" Title="" Description="" />
+  <MediaFolderDataElements Id="4866e87f-e011-4803-80bc-8c5de1563b21" Path="/Gallery Features" Title="" Description="" />
   <MediaFolderDataElements Id="7dce5da6-ae73-417a-86a3-dfb7a3f05cf3" Path="/Sample images" />
 </MediaFolderDataElementsElements>
