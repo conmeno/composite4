@@ -48,3 +48,5 @@
 20130501 17:27:36.2206 80 129 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 80 ended at 17:27:36:21 in process 23056
 20130501 17:27:46.5572 81 57 Warning ConsoleMessageServiceFacade  Console 'key05498287996028772' has a last known change numer of 315, but server current number is 1.
 20130501 17:45:05.3366 81 21 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 81 ended at 17:45:05:33 in process 23056
+20130501 18:19:20.1541 82 21 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 82 ended at 18:19:20:15 in process 23056
+20130501 19:08:29.9809 2 35 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 2 ended at 19:08:29:97 in process 6668
