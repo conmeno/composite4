@@ -29,3 +29,17 @@
    at Composite.Forms.ContactForm.Functions.SendEmail(String fromName, String fromEmail, String toName, String toEmail, String subject, String body) in d:\temp1\Website\App_Code\Composite\Forms\ContactForm\Functions.cs:line 158
    at Composite.Forms.ContactForm.Functions.<Send>d__2.MoveNext() in d:\temp1\Website\App_Code\Composite\Forms\ContactForm\Functions.cs:line 124
 20130501 11:07:21.5837 74 149 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 74 ended at 11:07:21:58 in process 23056
+20130501 12:23:40.5576 75 65 Error FunctionWrapper  System.Xml.Xsl.XslLoadException: The variable or parameter 'captions' is either not defined or it is out of scope. An error occurred at (0,0).
+   at System.Xml.Xsl.XslCompiledTransform.LoadInternal(Object stylesheet, XsltSettings settings, XmlResolver stylesheetResolver)
+   at Composite.Plugins.Functions.FunctionProviders.XsltBasedFunctionProvider.XsltBasedFunctionProvider.XsltXmlFunction.GetXslCompiledTransform()
+   at Composite.Plugins.Functions.FunctionProviders.XsltBasedFunctionProvider.XsltBasedFunctionProvider.XsltXmlFunction.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+20130501 12:24:57.2960 75 65 Error FunctionWrapper  System.Xml.Xsl.XslLoadException: 'xsl:choose' element cannot have text node children. An error occurred at (0,0).
+   at System.Xml.Xsl.XslCompiledTransform.LoadInternal(Object stylesheet, XsltSettings settings, XmlResolver stylesheetResolver)
+   at Composite.Plugins.Functions.FunctionProviders.XsltBasedFunctionProvider.XsltBasedFunctionProvider.XsltXmlFunction.GetXslCompiledTransform()
+   at Composite.Plugins.Functions.FunctionProviders.XsltBasedFunctionProvider.XsltBasedFunctionProvider.XsltXmlFunction.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+20130501 13:47:47.9723 75 28 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 75 ended at 13:47:47:97 in process 23056
+20130501 15:50:57.6829 76 12 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 76 ended at 15:50:57:68 in process 23056
+20130501 15:51:01.2262 77 10 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 77 ended at 15:51:01:22 in process 23056
+20130501 15:51:10.2297 78 72 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 78 ended at 15:51:10:22 in process 23056
