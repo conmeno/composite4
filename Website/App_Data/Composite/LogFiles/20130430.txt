@@ -1,0 +1,15 @@
+﻿20130430 15:59:46.9875 9 57 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 9 ended at 15:59:46:98 in process 22092
+20130430 21:06:57.3006 2 51 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 2 ended at 21:06:57:29 in process 23556
+20130430 21:54:27.8847 2 49 Error TreeService  System.InvalidOperationException: Workflow with id "76c7c0a6-f79d-4759-890d-04a6ec6efc2b" not found in state persistence store.
+   at System.Workflow.Runtime.WorkflowRuntime.InitializeExecutor(Guid instanceId, CreationContext context, WorkflowExecutor executor, WorkflowInstance workflowInstance)
+   at System.Workflow.Runtime.WorkflowRuntime.Load(Guid key, CreationContext context, WorkflowInstance workflowInstance)
+   at System.Workflow.Runtime.WorkflowRuntime.GetWorkflow(Guid instanceId)
+   at System.Workflow.Activities.StateMachineWorkflowInstance..ctor(WorkflowRuntime runtime, Guid instanceId)
+   at Composite.C1Console.Workflow.WorkflowFacadeImpl.GetCurrentFormEvents(Guid instanceId)
+   at Composite.C1Console.Workflow.WorkflowFlowController.AddEventHandles(FormFlowUiDefinition formFlowUiDefinition, Guid instanceId)
+   at Composite.C1Console.Workflow.WorkflowFlowController.GetCurrentUiDefinition(FlowToken flowToken)
+   at Composite.Core.WebClient.FlowMediators.ActionExecutionMediator.ExecuteElementAction(ElementHandle elementHandle, ActionHandle actionHandle, String consoleId)
+   at Composite.Core.WebClient.FlowMediators.TreeServicesFacade.ExecuteElementAction(String providerName, String serializedEntityToken, String piggybag, String serializedActionToken, String consoleId)
+   at Composite.Services.TreeServices.ExecuteSingleElementAction(ClientElement clientElement, String serializedActionToken, String consoleId) in d:\temp1\Website\Composite\services\Tree\TreeServices.asmx:line 209
+20130430 21:54:28.1027 2 48 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 2 ended at 21:54:28:10 in process 23056
+20130430 23:42:40.7270 3 60 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 3 ended at 23:42:40:72 in process 23056

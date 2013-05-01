@@ -1,0 +1,481 @@
+/*--RESET CSS--*/
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix:after
+{
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+@font-face
+{
+    font-family: Semilla;
+    src: url('/Wedding/font/Semilla.eot?') format('eot'), url('/Wedding/font/Semilla.woff') format('woff'), url('/Wedding/font/Semilla.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: MyriadPro-Cond;
+    src: url('/Wedding/font/MyriadPro-Cond.eot?') format('eot'), url('/Wedding/font/MyriadPro-Cond.woff') format('woff'), url('/Wedding/font/MyriadPro-Cond.ttf') format('truetype');
+}
+
+html, body
+{
+    width: 100%;
+    height: 100%;
+    font-family: Arial,sans-serif;
+    background-color: #fff;
+    color: #555;
+    font-size: 15px;
+    line-height: 23px;
+}
+
+img
+{
+    border: none;
+}
+
+ul
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+h1
+{
+    font-family: Semilla,Arial,sans-serif;
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: normal;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+h2
+{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+textarea
+{
+    resize: none;
+}
+
+/*--SEPERATOR--*/
+
+.seperator
+{
+    width: 100%;
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+.seperator1
+{
+    background: url(images/seperator1.jpg) no-repeat center center fixed;
+}
+
+.seperator2
+{
+    background: url(images/seperator2.jpg) no-repeat center center fixed;
+}
+
+.seperator3
+{
+    background: url(images/seperator3.jpg) no-repeat center center fixed;
+}
+
+.seperator .quote-outer
+{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.seperator .quote-inner
+{
+    padding: 100px 0px;
+    color: #fff;
+    font-family: Semilla,Arial,sans-serif;
+    font-size: 30px;
+}
+
+.seperator .quote-inner p
+{
+    font-size: 20px;
+    background: rgb(34, 34, 34); /* FALL ACK COLOR */
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 35px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    line-height: 28px;
+}
+
+.seperator .author
+{
+    font-family: MyriadPro-Light,arial,sans-serif !important;
+    font-size: 15px !important;
+    font-style: italic;
+    text-align: right;
+    display: block;
+    margin-top: 5px;
+}
+
+.separator-bg
+{
+    background: url(images/seperator-bg.png) repeat-x center center;
+    width: 100%;
+    height: 53px;
+}
+
+/*--HEADER--*/
+
+#wrapper
+{
+    width: 100%;
+}
+
+#home-section
+{
+    width: 100%;
+}
+
+#home-section #header
+{
+    width: 100%;
+    position: relative;
+    height: 162px;
+}
+
+#header #top-header
+{
+    height: 110px;
+    border-bottom: 1px solid #eee;
+}
+
+#header #top-header a
+{
+    width: 242px;
+    height: 62px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+
+#header .logo-shadow
+{
+    background: url(images/logo-shadow.png) no-repeat;
+    width: 390px;
+    height: 24px;
+    margin: 0 auto;
+}
+
+#header #bottom-header
+{
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    position: static;
+    background: #fff;
+    z-index: 999;
+}
+
+#header #bottom-header ul
+{
+    margin: 0 auto;
+    width: 1000px;
+    height: 100%;
+    text-align: center;
+}
+
+#header #bottom-header ul li
+{
+    float: left;
+    color: #000;
+    width: 124px;
+    border-right: 1px solid #f9f9f9;
+}
+
+#header #bottom-header ul li a
+{
+    line-height: 50px;
+    color: #000;
+    font-family: MyriadPro-Cond,MyriadPro-Light,arial,sans-serif;
+    font-size: 18px;
+    display: block;
+}
+
+.big-banner
+{
+    height: 780px;
+    background: url(images/main-bg.jpg) no-repeat bottom center fixed;
+}
+
+/*--CONTENT--*/
+
+h1 span
+{
+    color: #ea2993;
+}
+
+.section
+{
+    width: 960px;
+    margin: 0 auto;
+    padding: 80px 0px;
+}
+
+/*--INTRO SECTION--*/
+
+#intro-section
+{
+    height: 520px;
+    padding: 120px 0px 80px 0px !important;
+}
+
+#intro-section .image-section
+{
+    float: left;
+    width: 375px;
+    margin-right: 100px;
+}
+
+#intro-section .intro-content
+{
+    margin-top: 60px;
+    float: left;
+    width: 485px;
+}
+
+#intro-section p
+{
+    line-height: 26px;
+}
+
+/*--BENEFIT SECTION--*/
+
+#cBenefit-section
+{
+    height: 680px;
+}
+
+#cBenefit-section .cBenefit-image
+{
+    width: 375px;
+    float: left;
+    margin-right: 70px;
+}
+
+#cBenefit-section .cBenefit-image img
+{
+    border: 5px solid #f7f7f7;
+}
+
+#cBenefit-section .cBenefit-content
+{
+    float: left;
+    width: 515px;
+}
+
+.cBenefit-content p
+{
+    line-height: 26px;
+}
+
+.cBenefit-content .benefit
+{
+    margin-top: 50px;
+}
+
+.cBenefit-content .benefit img
+{
+    float: left;
+    width: 90px;
+    margin-right: 15px;
+}
+
+.cBenefit-content .benefit p
+{
+    float: left;
+    margin-top: 20px;
+}
+
+/*--FEATURES & WEDDING COFFEE--*/
+
+#wCoffee-section .center-title, #features-section .center-title
+{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#wCoffee-section h3, #features-section h3
+{
+    text-align: center;
+    margin-bottom: 17px;
+    font-family: Semilla, arial ,sans-serif;
+    font-size: 19px;
+    font-weight: normal;
+}
+
+#wCoffee-section ul, #features-section ul
+{
+    margin: 30px;
+}
+
+#wCoffee-section ul li, #features-section ul li
+{
+    list-style-type: disc;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.makeMeScrollable
+{
+    width: 930px;
+    height: 399px;
+    position: relative;
+    padding: 15px;
+    border: 1px solid #eee;
+    background: #fcfcfc;
+}
+
+.makeMeScrollable div.scrollableArea img
+{
+    cursor: pointer;
+    position: relative;
+    float: left;
+    margin-right: 7px;
+    padding: 0;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+/*--PARTNER--*/
+
+#partner-section
+{
+    padding: 80px 0px 150px 0px;
+}
+
+#partner-section .center-title
+{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#partner-section .partner-scroll
+{
+    height: 200px;
+}
+
+/*--CONTACT--*/
+
+#contact-section
+{
+    width: 100%;
+    height: 100%;
+    padding: 50px 0px 0px 0px !important;
+    background: url(images/contact-bg.jpg) no-repeat top center fixed;
+}
+
+#contact-section #contactable_inner
+{
+    width: 960px;
+    margin: 0 auto;
+}
+
+#contactable_inner .contact-text
+{
+    padding: 20px 35px 20px 35px;
+    margin: 50px 0px 50px 0px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#contactable_inner h1
+{
+    color: #fff;
+    border-bottom: 1px dotted #eee;
+    padding-bottom: 15px;
+}
+
+.contact-text p
+{
+    color: #FFFFFF;
+    font-size: 15px;
+    height: 30px;
+    margin-bottom: 5px;
+    padding-left: 30px;
+    padding-top: 5px;
+}
+
+.contact-text .add
+{
+    background: url(images/contact-icon-1.png) no-repeat top left;
+}
+
+.contact-text .fone
+{
+    background: url(images/contact-icon-2.png) no-repeat top left;
+}
+
+.contact-text .mobile
+{
+    background: url(images/contact-icon-3.png) no-repeat top left;
+}
+
+#contactable_inner #contactForm
+{
+    background: rgb(34, 34, 34); /* FALL ACK COLOR */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 35px 20px 35px;
+    color: #fff;
+}
+
+#contactForm .holder p
+{
+    margin-bottom: 15px;
+}
+
+#contactForm input
+{
+    width: 200px;
+    height: 25px;
+}
+
+#contactForm .submit, #submitContactForm
+{
+    width: 85px !important;
+    height: 40px !important;
+    background: #EA2993;
+    margin: 15px 0px 10px 0px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#contactForm .submit:hover, #submitContactForm:hover
+{
+    box-shadow: 5px 5px 0px #fff;
+}
+
+#contactForm .disclaimer
+{
+    font-size: 11px;
+    font-style: italic;
+}

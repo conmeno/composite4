@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageInstaller xmlns="http://www.composite.net/ns/management/packageinstaller/1.0">
+  <PackageFragmentUninstallers>
+    <Add uninstallerType="Composite.Core.PackageSystem.PackageFragmentInstallers.ConfigurationTransformationPackageFragmentUninstaller,Composite">
+      <Uninstall xsltFilePath="~\Config\Uninstall.xsl" xmlns="" />
+    </Add>
+    <Add uninstallerType="Composite.Core.PackageSystem.PackageFragmentInstallers.ConfigurationTransformationPackageFragmentUninstaller,Composite">
+      <Uninstall xsltFilePath="~\Config\Uninstall.xsl" xmlns="" />
+    </Add>
+    <Add uninstallerType="Composite.Core.PackageSystem.PackageFragmentInstallers.FilePackageFragmentUninstaller,Composite">
+      <Files xmlns="">
+        <File filename="~\Bin\Composite.Forms.Renderer.dll" />
+        <File filename="~\Composite\InstalledPackages\localization\Composite.Forms.Renderer.en-us.xml" />
+        <File filename="~\Frontend\Composite\Forms\Renderer\Controls/FormsRender.ascx" />
+        <File filename="~\Frontend\Composite\Forms\Renderer\Controls/FormsRender.ascx.cs" />
+        <File filename="~\Frontend\Composite\Forms\Renderer\Images/calendar.gif" />
+        <File filename="~\Frontend\Composite\Forms\Renderer\Styles.css" />
+        <File filename="~\Frontend\Composite\Forms\Renderer\Widgets/BoolSelectors/BoolSelector.ascx" />
+        <File filename="~\Frontend\Composite\Forms\Renderer\Widgets/BoolSelectors/CheckBox.ascx" />
+        <File filename="~\Frontend\Composite\Forms\Renderer\Widgets/Containers/FieldGroup.ascx" />
+        <File filename="~\Frontend\Composite\Forms\Renderer\Widgets/Containers/PlaceHolder.ascx" />
+        <File filename="~\Frontend\Composite\Forms\Renderer\Widgets/Containers/TabPanels.ascx" />
+        <File filename="~\Frontend\Composite\Forms\Renderer\Widgets/DateTimeSelectors/DateSelector.ascx" />
+        <File filename="~\Frontend\Composite\Forms\Renderer\Widgets/RichContent/InlineXhtmlEditor.ascx" />
+        <File filename="~\Frontend\Composite\Forms\Renderer\Widgets/Selectors/DataReferenceSelector.ascx" />
+        <File filename="~\Frontend\Composite\Forms\Renderer\Widgets/Selectors/DataReferenceTreeSelector.ascx" />
+        <File filename="~\Frontend\Composite\Forms\Renderer\Widgets/Selectors/MultiKeySelector.ascx" />
+        <File filename="~\Frontend\Composite\Forms\Renderer\Widgets/Selectors/Selector.ascx" />
+        <File filename="~\Frontend\Composite\Forms\Renderer\Widgets/TextInput/TextArea.ascx" />
+        <File filename="~\Frontend\Composite\Forms\Renderer\Widgets/TextInput/TextBox.ascx" />
+        <File filename="~\Frontend\Composite\Forms\Renderer\Xslt/MailBody.xslt" />
+      </Files>
+    </Add>
+    <Add uninstallerType="Composite.Core.PackageSystem.PackageFragmentInstallers.DataPackageFragmentUninstaller,Composite">
+      <Types xmlns="" />
+    </Add>
+    <Add uninstallerType="Composite.Localization.C1Console.FragmentInstaller.C1ConsoleFragmentUninstaller,Composite.Localization.C1Console.FragmentInstaller" />
+  </PackageFragmentUninstallers>
+</PackageInstaller>

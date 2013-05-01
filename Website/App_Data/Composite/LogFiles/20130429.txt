@@ -1,2 +1,22 @@
 ﻿20130429 15:26:53.1168 2 43 Information Composite.Core.WebClient.Setup.SetupService  Setup complete. Enjoy!
 20130429 15:26:53.2878 2  5 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 2 ended at 15:26:53:28 in process 9628
+20130429 17:25:39.4554 2  8 Warning Razor Edit  Compilation failed while validating changes to '~/App_Data/PageTemplates/WeddingLayout.cshtml'
+20130429 17:25:39.4924 2  8 Warning Razor Edit  System.Web.HttpCompileException (0x80004005): c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\4c1ef9c1\35d25554\App_Web__temp_weddinglayout.cshtml.e8f53651.h0sp-5md.0.cs(34): error CS1646: Keyword, identifier, or string expected after verbatim specifier: @
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Elements.ElementProviders.PageTemplateElementProvider.EditRazorPageTemplateWorkflow.ValidateMarkup(String virtualPath, String content, EntityToken& newEntityToken)
+
+20130429 17:36:59.1293 2 68 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 2 ended at 17:36:59:12 in process 22092
+20130429 17:38:07.6432 3 11 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 3 ended at 17:38:07:64 in process 22092
+20130429 17:51:16.7063 4 28 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 4 ended at 17:51:16:70 in process 22092
+20130429 17:51:20.8835 5 33 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 5 ended at 17:51:20:88 in process 22092
+20130429 18:13:17.8639 6 28 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 6 ended at 18:13:17:86 in process 22092
+20130429 18:53:57.7494 7 33 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 7 ended at 18:53:57:74 in process 22092
+20130429 18:54:00.7766 8 22 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 8 ended at 18:54:00:77 in process 22092

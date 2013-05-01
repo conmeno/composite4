@@ -1,0 +1,31 @@
+﻿20130501 00:15:59.5624 4 60 Information Composite.Localization.C1Console.FragmentInstaller  Start fixing Composite.config
+20130501 00:15:59.6254 4 60 Information Composite.Localization.C1Console.FragmentInstaller  Composite.config - fixed..
+20130501 00:16:01.7725 4 12 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 4 ended at 00:16:01:77 in process 23056
+20130501 08:12:58.4232 5 109 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 5 ended at 08:12:58:42 in process 23056
+20130501 08:13:12.4840 6 109 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 6 ended at 08:13:12:48 in process 23056
+20130501 08:14:23.8631 7 48 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 7 ended at 08:14:23:86 in process 23056
+20130501 08:14:35.9668 8 109 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 8 ended at 08:14:35:96 in process 23056
+20130501 08:46:35.7706 9 121 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 9 ended at 08:46:35:76 in process 23056
+20130501 08:48:12.1981 10 67 Error Composite.Forms.ContactForm  System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Must issue a STARTTLS command first. ux10sm1460975pab.1 - gsmtp
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Composite.Forms.ContactForm.Functions.SendEmail(String fromName, String fromEmail, String toName, String toEmail, String subject, String body) in d:\temp1\Website\App_Code\Composite\Forms\ContactForm\Functions.cs:line 158
+   at Composite.Forms.ContactForm.Functions.<Send>d__2.MoveNext() in d:\temp1\Website\App_Code\Composite\Forms\ContactForm\Functions.cs:line 124
+20130501 08:52:48.5909 10 97 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 10 ended at 08:52:48:58 in process 23056
+20130501 08:53:10.1632 11 159 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 11 ended at 08:53:10:16 in process 23056
+20130501 09:07:10.6372 67 111 Warning ConsoleMessageServiceFacade  Console 'key2627924785138943' has a last known change numer of 77, but server current number is 1.
+20130501 09:07:22.1289 67 90 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 67 ended at 09:07:22:12 in process 23056
+20130501 09:08:04.3753 68 66 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 68 ended at 09:08:04:37 in process 23056
+20130501 09:08:08.6546 69 65 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 69 ended at 09:08:08:65 in process 23056
+20130501 09:08:22.5284 70 90 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 70 ended at 09:08:22:52 in process 23056
+20130501 09:09:14.8693 71 66 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 71 ended at 09:09:14:86 in process 23056
+20130501 09:10:00.3669 72 95 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 72 ended at 09:10:00:36 in process 23056
+20130501 09:10:10.1105 73 60 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 73 ended at 09:10:10:10 in process 23056
+20130501 09:57:12.5959 74 136 Error Composite.Forms.ContactForm  System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Must issue a STARTTLS command first. v5sm1101920pbz.4 - gsmtp
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Composite.Forms.ContactForm.Functions.SendEmail(String fromName, String fromEmail, String toName, String toEmail, String subject, String body) in d:\temp1\Website\App_Code\Composite\Forms\ContactForm\Functions.cs:line 158
+   at Composite.Forms.ContactForm.Functions.<Send>d__2.MoveNext() in d:\temp1\Website\App_Code\Composite\Forms\ContactForm\Functions.cs:line 124
+20130501 11:07:21.5837 74 149 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 74 ended at 11:07:21:58 in process 23056

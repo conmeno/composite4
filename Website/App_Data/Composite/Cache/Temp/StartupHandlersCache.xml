@@ -66,5 +66,10 @@
       <AssemblyName>TidyNet</AssemblyName>
       <LastModified>2013-04-11T10:57:28+07:00</LastModified>
     </AssemblyInfo>
+    <AssemblyInfo>
+      <SubscribedTypes />
+      <AssemblyName>Composite.Forms.Renderer</AssemblyName>
+      <LastModified>2013-05-01T00:15:59.5134205+07:00</LastModified>
+    </AssemblyInfo>
   </Assemblies>
 </SubscribedTypesCache>

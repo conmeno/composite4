@@ -1,0 +1,102 @@
+﻿@inherits RazorPageTemplate
+
+@functions {
+    public override void Configure()
+    {
+        TemplateId = new Guid("1eefd782-273c-45ee-85c4-39f145d91f0d");
+        TemplateTitle = "WeddingTemplate";
+        Layout = "WeddingLayout.cshtml";
+    }
+
+    [Placeholder(Id = "Home", IsDefault = true)]
+    public XhtmlDocument Home { get; set; }
+
+    [Placeholder(Id = "Intro")]
+    public XhtmlDocument Intro { get; set; }
+
+	[Placeholder(Id = "Benefit")]
+    public XhtmlDocument Benefit { get; set; }
+
+	[Placeholder(Id = "Features")]
+    public XhtmlDocument Features { get; set; }
+
+	[Placeholder(Id = "Coffee")]
+    public XhtmlDocument Coffee { get; set; }
+
+
+	[Placeholder(Id = "Partner")]
+    public XhtmlDocument Partner { get; set; }
+
+	[Placeholder(Id = "Contact")]
+    public XhtmlDocument Contact { get; set; }
+
+ 
+ 
+	
+	}
+@{
+    Layout = "WeddingLayout.cshtml";
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+@*you can add template specific head elements here*@
+</head>
+<body id="frontpage">
+   <div id="wrapper">
+        <div id="home-section">
+            <div id="header">
+ 				@Markup(Home)
+                <div id="stickyalias">
+                </div>
+            </div>
+            <!-- END TOP -->
+            <div class="big-banner">
+            </div>
+        </div>
+        <!-- END HOME SECTION -->
+        @Markup(Intro)
+        <!-- END INTRO -->
+        
+        @Markup(Benefit)
+        <!-- END BENEFIT -->
+        <div class="seperator seperator2">
+            <div class="quote-outer">
+                <div class="quote-inner">
+                    <p>
+                        A kiss is a lovely trick designed by nature to stop speech when words become superfluous.<span
+                            class="author">~Aristotle </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+       
+	   @Markup(Features)
+	   
+    </div>
+    <!-- END FEATURES -->
+    <div class="seperator seperator3">
+        <div class="quote-outer">
+            <div class="quote-inner">
+                <p>
+                    A kiss is a lovely trick designed by nature to stop speech when words become superfluous.<span
+                        class="author">~Aristotle </span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    @Markup(Coffee)
+	
+    <!-- END WEDDING COFFEE -->
+    <div class="separator-bg">
+    </div>
+	
+	@Markup(Partner)
+    
+    <!-- END PARTNER --> 
+	 
+	@Markup(Contact)
+    
+	
+</body>
+</html>
