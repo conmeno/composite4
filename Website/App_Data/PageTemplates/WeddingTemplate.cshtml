@@ -18,7 +18,7 @@
     public XhtmlDocument Benefit { get; set; }
 
 	[Placeholder(Id = "Features")]
-    public XhtmlDocument Features { get; set; }
+    public XhtmlDocument Features { get; set; } 
 
 	[Placeholder(Id = "Coffee")]
     public XhtmlDocument Coffee { get; set; }
@@ -39,7 +39,7 @@
 }
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-@*you can add template specific head elements here*@
+@*you can add template specific head elements here*@ 
 </head>
 <body id="frontpage">
    <div id="wrapper">
@@ -71,9 +71,7 @@
         </div>
        
 	   @Markup(Features)
-	   
-    </div>
-    <!-- END FEATURES -->
+	     
     <div class="seperator seperator3">
         <div class="quote-outer">
             <div class="quote-inner">
@@ -97,6 +95,6 @@
 	 
 	@Markup(Contact)
     
-	
+</div><!-- END WRAPPER -->
 </body>
 </html>

@@ -1,4 +1,4 @@
-$(document).ready(function () {
+﻿$(document).ready(function () {
     // Sticky header
     var stickyHeaderTop = $('#bottom-header').offset().top;
 
@@ -24,14 +24,29 @@ $(document).ready(function () {
 
     // Gallery slide
     $(".makeMeScrollable").smoothDivScroll({
-        hotSpotScrolling: false,
-        touchScrolling: true,
-        manualContinuousScrolling: false,
-        mousewheelScrolling: true
+        mousewheelScrolling: "allDirections",
+		manualContinuousScrolling: true,
+		autoScrollingMode: "onStart"
     });
 
     // Randomize an element
     var numberOfElements = $("#scrollableArea *").length;
     var randomNumber = Math.floor(Math.random() * numberOfElements + 1);
     $("#makeMeScrollable").smoothDivScroll("jumpToElement", "number", randomNumber);
+	
+	 var pull        = $('#pull');  
+                    menu        = $('#header #bottom-header ul');  
+                    menuHeight  = menu.height();  
+              
+                $(pull).on('click', function(e) {  
+                    e.preventDefault();  
+                    menu.slideToggle();  
+     });  
+	
+	$(window).resize(function(){  
+                var w = $(window).width();  
+                if(w > 768 && menu.is(':hidden')) {  
+                    menu.removeAttr('style');  
+                }  
+            });  
 });
